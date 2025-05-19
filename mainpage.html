@@ -9,29 +9,121 @@
   <header>
     <div class="logo">Pharmacy</div>
     <nav class="headerDesc">
-      <a href="#hhh" class="headerlink">Home</a>
-      <a href="#" class="headerlink">Products</a>
-      <a href="#" class="headerlink">Services</a>
-      <a href="#" class="headerlink">Prescriptions</a>
+      <a href="#home" class="headerlink">Home</a>
+      <a href="#products" class="headerlink">Products</a>
+      <a href="#services" class="headerlink">Services</a>
+      <a href="#prescription" class="headerlink">Prescriptions</a>
       <a href="#" class="headerlink">Opening Hours</a>
-      <a href="#" class="headerlink">Contact Us</a>
+      <a href="#Contact" class="headerlink">Contact Us</a>
     </nav>
     <div class="headerright">
       <input type="text" placeholder="Search..." />
-      <button>Log in</button>
+      <button><a href="login.html">Log in</a></button>
     </div>
   </header>
    <br><br>
   <div class="offer-banner">
     💊 Special Offer: Get 20% off on your first online order! Use code: HEALTH20
   </div>
-  <section>
-    <img src="Screenshot_2025-05-01_004602-removebg-preview.png" alt="logo" id="hhh">
+  <section class="hero">
+    <img src="logo.png" alt="logo" id="home">
     <h1>Trusted care, reliable medicine, delivered to your door.</h1>
     <h2>Your Health Is Our Priority</h2>
   </section>
  <br><br><br><br> <br><br><br><br>
  <hr>
+<!-- Products Section -->
+<section class="products" id="products">
+  <h2>Our Products</h2>
+  <div class="product-list">
+    <div class="product-item">
+      <h3>Paracetamol</h3>
+      <p>Effective pain reliever and fever reducer.</p>
+    </div>
+    <div class="product-item">
+      <h3>Vitamin C</h3>
+      <p>Boost your immune system with daily vitamins.</p>
+    </div>
+    <div class="product-item">
+  
+  <p>Boost your immune system with daily vitamins.</p>
+  <a href="#" class="more-link"><h3>Tab For More!</h3></a> <!-- الرابط الجديد هنا -->
+</div>
+
+    <!-- Add more items as needed -->
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="services" id="services">
+  <h2>Our Services</h2>
+  <div class="services-list">
+    <div class="service-item">
+      <h3>Home Delivery</h3>
+      <p>Get your prescriptions and products delivered to your doorstep safely and quickly.</p>
+      <h5>coming soon</h5>
+    </div>
+    <div class="service-item">
+      <h3>Online Consultation</h3>
+      <p>Speak to licensed pharmacists online for health advice and product recommendations.</p>
+      <h5>coming soon</h5>
+    </div>
+    <div class="service-item">
+      <h3>Prescription Management</h3>
+      <p>Upload and manage your prescriptions online for fast and easy refills.</p>
+      <h5>coming soon</h5>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Prescription Section -->
+<section class="prescription" id="prescription">
+  <h2>Prescriptions</h2>
+  <p>Need to refill or upload a prescription? We've got you covered.</p>
+  
+  <form class="prescription-form" action="#" method="post" enctype="multipart/form-data">
+    <label for="prescription-name">Full Name:</label>
+    <input type="text" id="prescription-name" name="name" placeholder="Your Name" required />
+
+    <label for="prescription-file">Upload Prescription:</label>
+    <input type="file" id="prescription-file" name="prescription" accept=".jpg,.jpeg,.png,.pdf" required />
+
+    <button type="submit">Submit Prescription</button>
+  </form>
+</section>
+
+
+<!-- Opening Hours Section -->
+<section class="hours" id="hours">
+  <h2>Opening Hours</h2>
+  <div class="hour-row"><span>Sunday</span><span>9:00 AM – 9:00 PM</span></div>
+  <div class="hour-row"><span>Monday</span><span>9:00 AM – 9:00 PM</span></div>
+  <div class="hour-row"><span>Tuesday</span><span>9:00 AM – 9:00 PM</span></div>
+  <div class="hour-row"><span>Wednesday</span><span>9:00 AM – 9:00 PM</span></div>
+  <div class="hour-row"><span>Thursday</span><span>9:00 AM – 9:00 PM</span></div>
+  <div class="hour-row"><span>Friday</span><span class="Closed">Closed</span></div>
+  <div class="hour-row"><span>Saturday</span><span>10:00 AM – 6:00 PM</span></div>
+</section>
+
+
+
+
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <p>We'd love to hear from you! Reach out via email or phone.</p>
+  <p>Email: pharmacy@example.com | Phone: +962-07*-***-***</p>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Pharmacy. All rights reserved.</p>
+</footer>
+
 
   
 </body>
