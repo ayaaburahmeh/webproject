@@ -1,22 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
-
 * {
   box-sizing: border-box;
-
   font-family: "Poppins", sans-serif;
 }
 
-hr{
+hr {
   opacity: 0.3;
 }
+
 body {
-  background-color: #f5f5f5;
+  background-color: #f5fafd;
 }
 
-
 header {
-  background-color: #bbdefb;
+  background-color: #cce7ff;
   width: 100%;
   padding: 15px 30px;
   display: flex;
@@ -26,13 +24,11 @@ header {
   transition: all 0.3s ease;
 }
 
-
 .logo {
   font-size: 24px;
   font-weight: 700;
-  color: #0d47a1;
+  color: #0a3d62;
 }
-
 
 .headerDesc {
   display: flex;
@@ -47,31 +43,8 @@ header {
 }
 
 .headerlink:hover {
-  color: #1976d2;
+  color: #0066cc;
 }
-
-
-
-
-
-
- .offer-banner {
-  background-color: #e3f2fd;
-  color: #0d47a1;
-  text-align: center;
-  padding: 10px;
-  font-weight: 600;
-  border-top: 2px dashed #90caf9;
-  border-bottom: 2px dashed #90caf9;
-  transform: translateY(-20px);
- 
-
- }
-
-
-
-
-
 
 .headerright {
   display: flex;
@@ -87,8 +60,8 @@ header {
 
 .headerright button {
   padding: 6px 12px;
-  background-color: #2196f3;
-  color: white;
+  background-color: #007bff;
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -96,28 +69,230 @@ header {
 }
 
 .headerright button:hover {
-  background-color: #1976d2;
+  background-color: #0056b3;
 }
- section img{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed; bottom: 20%; right: 900px;
- }
- section h1{
-    text-align: center;
-    margin-top: 200px;
-  margin-left: 200px;
-  color: #1565C0;
- }
- section h2{
+
+.offer-banner {
+  background-color: #e6f3ff;
+  color: #0a3d62;
   text-align: center;
-    margin-top: 0px;
+  padding: 10px;
+  font-weight: 600;
+  border-top: 2px dashed #99cfff;
+  border-bottom: 2px dashed #99cfff;
+  transform: translateY(-20px);
+}
+
+section img {
+  all: unset;
+  width: 400px;
+  position: absolute;
+  bottom: 20%;
+  right: 900px;
+}
+
+section h1 {
+  text-align: center;
+  margin-top: 200px;
+  margin-left: 200px;
+  color: #0056b3;
+}
+
+section h2 {
+  text-align: center;
+  margin-top: 0px;
   margin-left: -100px;
- color: #2E7D32;
- }
+  color: #2e7d32;
+}
+
+/* Products Section */
+.products {
+  padding: 50px;
+  background-color: #e3f2fd;
+  text-align: center;
+}
+
+.products h2 {
+  color: #0a3d62;
+  margin-bottom: 30px;
+  margin-left: 0%;
+}
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.product-item {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 200px;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+}
+section.products a{
+  color: #000;
+}
+
+/* Contact Section */
+.contact {
+  padding: 40px;
+  background-color: #d7ecff;
+  text-align: center;
+  color: #0a3d62;
+}
+
+.contact h2 {
+  margin-bottom: 15px;
+  margin-left: 0%;
+}
+
+/* Footer */
+footer {
+  background-color: #0a3d62;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+
+/* Services Section */
+.services {
+  padding: 60px 20px;
+  background-color: #f0f9ff;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #0a3d62;
+  margin-left: 0%;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.service-item {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+}
+
+.service-item h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #2e7d32;
+}
+
+.service-item p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Prescription Section */
+.prescription {
+  padding: 50px 20px;
+  background-color: #eef6f9;
+  text-align: center;
+}
+
+.prescription h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #0a3d62;
+  margin-left: 0%;
+}
+
+.prescription p {
+  margin-bottom: 30px;
+  color: #555;
+  font-size: 16px;
+}
+
+.prescription-form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.prescription-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.prescription-form input[type="text"],
+.prescription-form input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.prescription-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.prescription-form button:hover {
+  background-color: #0056b3;
+}
 
 
 
+.hours {
+  padding: 50px 20px;
+  background-color: #e3f2fd;
+  text-align: center;
+  color: #0d47a1;
+}
 
+.hours h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  margin-left: 0%;
+}
+
+.hour-row {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #333;
+}
+.hour-row span.closed{
+  color: red;
+}
 
